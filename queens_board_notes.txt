@@ -1,0 +1,185 @@
+function isValid(x,y,board[][],N)
+
+ 
+
+    /*
+
+    Check if the position at x,y is not attacked by any other 
+
+    queen.
+
+    Check if no position is marked 1 in the same row.
+
+    Check if no position is marked 1 in the same column.
+
+    Check if no position is marked 1 in the diagonals.
+
+    */
+
+ 
+
+    for i = 0 to N - 1
+
+        if board[x][i] equals 1 or board[i][y] equals 1
+
+            return false
+
+ 
+
+    tempx = x
+
+    tempy = y
+
+    
+
+    while tempx >= 0 and tempy < N
+
+        if board[tempx][tempy] equals 1
+
+            return false
+
+        tempx -= 1
+
+        tempy += 1
+
+    
+
+    tempx = x
+
+    tempy = y
+
+    
+
+    while tempx < N and tempy >= 0
+
+        if board[tempx][tempy] equals 1
+
+            return false
+
+        tempx += 1
+
+        tempy -= 1
+
+ 
+
+    tempx = x
+
+    tempy = y
+
+ 
+
+    while tempx >= 0 and tempy >= 0
+
+        if board[tempx][tempy] equals 1
+
+            return false
+
+        tempx -= 1
+
+        tempy -= 1
+
+ 
+
+    tempx = x
+
+    tempy = y
+
+ 
+
+    while tempx < N and tempy < N
+
+        if board[tempx][tempy] equals 1
+
+            return false
+
+        tempx += 1
+
+        tempy += 1
+
+ 
+
+    
+
+    //   The position is a safe position, return true
+
+    return true
+
+ 
+
+function N-Queens(Q, board[][], N)
+
+    
+
+    //   Q represents the number of queens to be placed on the board.
+
+ 
+
+    //   Base Case, when all queens have been placed
+
+    if Q equals 0 
+
+        return true
+
+ 
+
+    /*
+
+    For each possible position on the board, check if the position is safe i.e it is not attacked by any other queen placed so far.
+
+    */
+
+ 
+
+    for i = 0 to N - 1
+
+        for j = 0 to N - 1
+
+            bool can = isValid(i, j, board, N)
+
+            
+
+            /*
+
+            If the position is safe, then mark the position on the board as 1, and check recursively for Q-1 queens if they can be placed successfully.
+
+            */
+
+ 
+
+            if isValid is true
+
+                board[i][j] = 1
+
+                bool solve = N - Queens(Q - 1,board,N)
+
+                
+
+            /*
+
+            The remaining queens can be placed successfully, return true, otherwise, unmark the position on the board, and check for other possible options.
+
+            */
+
+ 
+
+                if solve is true
+
+                    return true
+
+                else
+
+                    board[i][j] = 0
+
+            else
+
+                continue
+
+    /*
+
+    Since there was no possible option to place a queen on the board, so return false.
+
+    */
+
+ 
+
+    return false

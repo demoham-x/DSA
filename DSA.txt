@@ -1,0 +1,74 @@
+DSA:
+	Data Structure:
+	Data is ...
+	>Organised
+	>Stored
+	>Managed
+	
+	>Provides a way to systamatically store and manage data.
+	
+	>Play a crucial role in software development
+	
+	Data Structure Types:
+	
+	1)Linear Data Structure:
+		>Static Data Structure:
+			>Array
+		>Dynamic Data Structure:
+			>Queue
+			>Stack
+			>Linked List
+		
+	2)Non Linear Data Structure:
+		>Tree
+		>Graph
+		
+	Linear Data Structures:
+	>Linear data structures are arrangements of data elements where each element has a unique predecessor and successor, forming a sequential order.
+	
+	Operations on Linear Data Structures
+	>Access: Retrieving elements by index, position, or pointer.
+	>Insertion: Adding new elements at specific positions.
+	>Deletion: Removing elements from specific positions.
+	>Traversal: Iterating through elements sequentially.
+	>Search: Finding the position or existence of an element.
+	>Update: Modifying the value of an element.
+	>Sorting: Arranging elements in a specified order.
+	>Merging: Combining two ordered linear structures.
+	
+	Non-Linear Data Structures
+	>Non-linear data structures do not follow a sequential order; each element can connect to multiple elements, forming complex relationships.
+	
+	Operations on Non-Linear Data Structures:
+	>Tree Traversal: Navigating trees using methods like in-order, pre-order, and post-order traversal to explore hierarchical data.
+	>Graph Traversal: Exploring graphs through traversal algorithms like breadth-first search (BFS) and depth-first search (DFS).
+	>Heap Operations: Performing heap-specific operations like insertion, deletion, and heapifying to maintain the heap property.
+	>Balancing: Ensuring balanced trees, like AVL or Red-Black trees, to maintain efficient search and insertion operations
+	
+	Choosing the Right Data Structure
+
+ 
+
+Factors Influencing Data Structure Selection:
+
+	Data Characteristics: 
+	>Analyzing the type, size, and nature of the data is crucial to align the data structure's properties with the data itself.
+	>For instance, choosing an array for fixed-size data or a linked list for dynamic data with frequent insertions/deletions enhances efficiency.
+	
+	Operations and Usage:
+	>Identifying primary operations, such as search, insertion, or deletion, clarifies the essential functionality the data structure must provide.
+	>Evaluating the frequency of each operation guides the selection towards structures optimized for the most common tasks, improving overall performance.
+	
+	Memory and Storage Constraints:
+	>Evaluating memory availability and storage needs ensures efficient resource utilization, preventing unnecessary waste.
+	>Opting for memory-efficient structures, like bit arrays or compressed data representations, is essential for systems with limited memory resources.
+	
+	Access Patterns:
+	>Recognizing access patterns, whether sequential, random, or specific, help choose structures that align with expected data retrieval methods.
+	>For instance, using arrays for sequential access or hash tables for quick random access based on keys enhances access efficiency.
+	
+	Algorithmic Requirements:
+	>Considering algorithms that will interact with the chosen structure ensures compatibility and efficiency.
+	>For example, when planning to implement graph algorithms, selecting structures like adjacency lists can simplify traversal and manipulation tasks.
+	
+	
